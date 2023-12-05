@@ -1,0 +1,8 @@
+body {
+    background: rgb(71, 69, 69);     /* red, blue, yellow, etc */
+    color: rgb(202, 197, 197);             /* red, blue, yellow, etc */
+    font-size: 20px;        /* 0px - 100px and beyond */
+    font-weight: normal;   /* lighter, normal, bold  */
+    text-align: right;      /* left, center or right  */ 
+    margin-top: 5px;        /* From 0px and upwards   */
+}
