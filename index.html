@@ -5,13 +5,23 @@
     </head>
     <body>
         <div class="main">
-            <h1>Welcome</h1>
+            <h1 id="welcome" onclick=myFunction()>Welcome</h1>
             <h2>To my portfolio site</h2>
             <div class="card">
                 <p id="message">It is still in development so please check back later for updates</p>
             </div>
-            
+
             <button type="button" onclick='document.getElementById("message").innerHTML = "There has been [1] update"'>Check for updates</button>
         </div>
     </body>
 </html>
+
+<script>function myFunction() {
+    var x = document.getElementById("welcome");
+    if (x.innerHTML === "Welcome") {
+      x.innerHTML = "Melcowe";
+    } else {
+      x.innerHTML = "Welcome";
+    }
+  }
+</script>
