@@ -6,10 +6,12 @@
     <body>
         <div class="main">
             <h1>Welcome</h1>
-            <h2>This is my portfolio site</h2>
+            <h2>To my portfolio site</h2>
             <div class="card">
-                <p>It is still in development so please check back later for updates</p>
+                <p id="message">It is still in development so please check back later for updates</p>
             </div>
+            
+            <button type="button" onclick='document.getElementById("message").innerHTML = "There has been [1] update"'>Check for updates</button>
         </div>
     </body>
 </html>
