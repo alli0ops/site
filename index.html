@@ -5,18 +5,35 @@
     </head>
     <body>
         <div class="main">
-            <h1 id="welcome" onclick=myFunction()>Welcome</h1>
-            <h2>To my portfolio site</h2>
             <div class="card">
-                <p id="message">It is still in development so please check back later for updates</p>
+              <h1 id="welcome" onclick=myFunction()>Welcome</h1>
             </div>
-
-            <button type="button" onclick='document.getElementById("message").innerHTML = "There has been [1] update"'>Check for updates</button>
+            <p id="message">Do you wish to enter?</p>
+            <button type="button" id="enter-button">Enter</button>
         </div>
     </body>
 </html>
 
-<script>function myFunction() {
+
+
+<script>
+  window.onmousemove = e => {
+    const dot = document.createElement("span");
+    dot.setAttribute("id", "dots");
+    dot.className = "dot"; 
+
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    dot.style.left = `${mouseX}px`;
+    dot.style.top = `${mouseY}px`;
+
+    document.body.appendChild(dot);
+    document.getElementById("dots").remove()
+    //setTimeout(document.getElementById("dots").remove(), 1500);
+  }
+  
+
+  function myFunction() {
     var x = document.getElementById("welcome");
     if (x.innerHTML === "Welcome") {
       x.innerHTML = "Melcowe";
@@ -24,4 +41,5 @@
       x.innerHTML = "Welcome";
     }
   }
+
 </script>

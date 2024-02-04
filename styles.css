@@ -3,8 +3,7 @@ body {
     color: rgb(202, 197, 197); 
 }
 
-.main{
-               
+.main{ 
     font-size: 20px;        
     font-weight: normal;
     text-align: center; 
@@ -20,15 +19,21 @@ body {
     
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid white;
-    padding: 5px;
+    padding: 2px;
     
     text-align: center;
-    
+}
+
+.dot {
+    height: 1px;
+    width: 1px;
+    background-color: white;
+
+    position: absolute;
 }
 
 h1{
-    margin: 26px;
+    margin: 15px;
 }
 
 h2{
@@ -43,3 +48,4 @@ button{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
