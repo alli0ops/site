@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <div class="card">
+              <h1 id="welcome" onclick=myFunction()>Case Studies</h1>
+            </div>
+            <button type="button"  id="homeButton">Home</button>
+            <button type="button" id="mediaButton">Media</button>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    document.getElementById("homeButton").onclick = function () {
+        location.href = "/index.html";
+    };
+</script>
+<script type="text/javascript">
+    document.getElementById("mediaButton").onclick = function () {
+        location.href = "/media.html";
+    };
+</script>
