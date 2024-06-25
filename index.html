@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/36adcb5daf.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="main">
@@ -11,35 +12,12 @@
             <p id="message">Do you wish to enter?</p>
             <button type="button" id="enter-button">Enter</button>
         </div>
+        <script src="dot.js"></script>
     </body>
 </html>
 
-
-
-<script>
-  window.onmousemove = e => {
-    const dot = document.createElement("span");
-    dot.setAttribute("id", "dots");
-    dot.className = "dot"; 
-
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    dot.style.left = `${mouseX}px`;
-    dot.style.top = `${mouseY}px`;
-
-    document.body.appendChild(dot);
-    document.getElementById("dots").remove()
-    //setTimeout(document.getElementById("dots").remove(), 1500);
-  }
-  
-
-  function myFunction() {
-    var x = document.getElementById("welcome");
-    if (x.innerHTML === "Welcome") {
-      x.innerHTML = "Melcowe";
-    } else {
-      x.innerHTML = "Welcome";
-    }
-  }
-
+<script type="text/javascript">
+    document.getElementById("caseStudiesButton").onclick = function () {
+        location.href = "/CaseStudies.html";
+    };
 </script>
